@@ -226,5 +226,15 @@ public class Messages {
         System.out.println();
         displayMessage("Thank you for using Xavian's Half-Life Calculator.");
     }
+
+    public static void slopeGreet(){
+        System.out.println("Welcome to the slope calculator, where we calculate slopes.");
+    }
+
+    /**
+     * Displays the fraction calculator's farewell message.
+     */
+
+    public static void slopeGoodbye() {displayMessage("Thank you for using the Slope Calculator.");}
 }
 

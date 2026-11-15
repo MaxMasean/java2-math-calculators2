@@ -1,5 +1,6 @@
 package edu.kirkwood.view;
 
+import edu.kirkwood.controller.colman.SlopeCalculator;
 import edu.kirkwood.controller.clapton.BaseConversionCalculator;
 import edu.kirkwood.controller.makayla.RespiratoryRateCalculator;
 import edu.kirkwood.controller.issouf.RetirementCalculator;
@@ -30,6 +31,7 @@ public class MainMenu {
             "Issouf's Retirement Calculator",
             "Riona's Trigonomentric Functions Calculator",
             "Evan's Doomsday Calculator",
+            "Colman's Slope Calculator",
             "Clapton's Base Conversion Calculator",
             "Quit"
           };
@@ -68,6 +70,9 @@ public class MainMenu {
                     DoomsdayCalculatorController.start();
                     break;
                 case 11:
+                    SlopeCalculator.start();
+                    break;
+                case 12:
                     BaseConversionCalculator.start();
                     break;
                 default:
