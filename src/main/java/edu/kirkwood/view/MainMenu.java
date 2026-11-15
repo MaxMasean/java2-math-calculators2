@@ -1,8 +1,11 @@
 package edu.kirkwood.view;
 
 import edu.kirkwood.controller.colman.SlopeCalculator;
+import edu.kirkwood.controller.clapton.BaseConversionCalculator;
+import edu.kirkwood.controller.makayla.RespiratoryRateCalculator;
 import edu.kirkwood.controller.issouf.RetirementCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
+import edu.kirkwood.controller.riona.AngleCalculator;
 import edu.kirkwood.controller.ryan.LoanCalculator;
 import edu.kirkwood.controller.noah.InterestCalculatorController;
 import edu.kirkwood.controller.masean.GPACalculator;
@@ -22,11 +25,14 @@ public class MainMenu {
             "Xavian's Half Life Calculator",
             "Masean's GPA Calculator",
             "Noah's Interest Calculator",
-            "Ryan's Amortization Loan Calculator", 
+            "Ryan's Amortization Loan Calculator",
+            "Makayla's Respiratory Rate Calculator",
             "Bailey's Astro OEV Calculator", 
-            "Issouf's Retirement Calculator", 
+            "Issouf's Retirement Calculator",
+            "Riona's Trigonomentric Functions Calculator",
             "Evan's Doomsday Calculator",
             "Colman's Slope Calculator",
+            "Clapton's Base Conversion Calculator",
             "Quit"
           };
         while(true) {
@@ -49,16 +55,25 @@ public class MainMenu {
                     LoanCalculator.start();
                     break;
                 case 6:
-                    edu.kirkwood.controller.bailey.AstroOEVCalculator.start();
+                    RespiratoryRateCalculator.start();
                     break;
                 case 7:
-                    RetirementCalculator.start();
+                    edu.kirkwood.controller.bailey.AstroOEVCalculator.start();
                     break;
                 case 8:
-                    DoomsdayCalculatorController.start();
+                    RetirementCalculator.start();
                     break;
                 case 9:
+                    AngleCalculator.start();
+                    break;
+                case 10:
+                    DoomsdayCalculatorController.start();
+                    break;
+                case 11:
                     SlopeCalculator.start();
+                    break;
+                case 12:
+                    BaseConversionCalculator.start();
                     break;
                 default:
                     return;
