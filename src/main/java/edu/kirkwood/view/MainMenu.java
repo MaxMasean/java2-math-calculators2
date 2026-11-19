@@ -10,6 +10,7 @@ import edu.kirkwood.controller.ryan.LoanCalculator;
 import edu.kirkwood.controller.noah.InterestCalculatorController;
 import edu.kirkwood.controller.masean.GPACalculator;
 import edu.kirkwood.controller.evan.DoomsdayCalculatorController;
+import edu.kirkwood.controller.trae.AutoLoanCalculator;
 import edu.kirkwood.controller.xavian.HalfLifeCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
@@ -31,6 +32,7 @@ public class MainMenu {
             "Issouf's Retirement Calculator",
             "Riona's Trigonomentric Functions Calculator",
             "Evan's Doomsday Calculator",
+            "Trae's Auto Loan Calculator",
             "Colman's Slope Calculator",
             "Clapton's Base Conversion Calculator",
             "Quit"
@@ -70,9 +72,12 @@ public class MainMenu {
                     DoomsdayCalculatorController.start();
                     break;
                 case 11:
-                    SlopeCalculator.start();
+                    AutoLoanCalculator.start();
                     break;
                 case 12:
+                    SlopeCalculator.start();
+                    break;
+                case 13:
                     BaseConversionCalculator.start();
                     break;
                 default:

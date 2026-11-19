@@ -227,6 +227,15 @@ public class Messages {
         displayMessage("Thank you for using Xavian's Half-Life Calculator.");
     }
 
+    public static void autoLoanGreet() {
+        displayMessage("Welcome to Trae's Auto Loan Calculator");
+        System.out.println("Enter your car price, down payment, interest rate, and loan term");
+        System.out.println("Example: $30,000 car, 5,000 down, 6.5 interest, 5 years\n");
+    }
+    public static void autoLoanGoodbye() {
+        displayMessage("Thank you for using Trae's Calculator");
+    }
+
     public static void slopeGreet(){
         System.out.println("Welcome to the slope calculator, where we calculate slopes.");
     }
@@ -235,6 +244,8 @@ public class Messages {
      * Displays the fraction calculator's farewell message.
      */
 
-    public static void slopeGoodbye() {displayMessage("Thank you for using the Slope Calculator.");}
+    public static void slopeGoodbye() {
+      displayMessage("Thank you for using the Slope Calculator.");
+    }
 }
 
