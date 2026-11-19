@@ -13,6 +13,7 @@ public class AutoLoanCalculator {
         autoLoanGreet();
 
         outer: while(true) {
+
             // get user input if the user want to enter or not
             String value = getString("Would you like to enter an auto loan? ('y' to continue or 'q' to quit)");
 
